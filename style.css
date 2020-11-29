@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  background: #31313a;
+  color: #f0f0f0;
+}
+
+.header {
+  padding: 10px;
+  margin: 0;
+  color: #0ce897;
+}
+
+#container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+
+#mynetwork {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #0ce897;
+}
+
+#container2 {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #0ce897;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#mynetwork2 {
+  width: 100%;
+  height: 100%;
+}
+
+#generate-graph {
+  margin: auto;
+  display: block;
+  color: lightpink;
+  background: #31313a;
+}
+
+#solve {
+  margin: auto;
+  display: block;
+  color: #0ce897;
+  background: #31313a;
+}

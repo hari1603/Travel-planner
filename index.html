@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"            
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--used for bootstrap-->
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>                       <!--used for the icon representing a node-->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>  <!--used for the nodes representation for the cool animation-->
+    <link rel="stylesheet" href="style.css">                                                                                  
+    <script src="practice.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="padding: 0; margin: 0;text-align: center;">TRAVEL PLANNER</h1>
+    </div>
+    <div id="container" style="">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Blue link represents road time distance : <i class="fas fa-road" aria-hidden="true" style="color: rgb(95, 173, 224)"></i><br/>
+                Orange link represents bus travel distance : <i class="fa fa-bus" aria-hidden="true" style="color: rgb(226, 185, 114)"></i><br>
+                Green link represents flight travel distance : <i class="fa fa-plane" aria-hidden="true" style="color: #0ce897"></i><br>
+                Click on solve to get Solution !!
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">GET NEW PROBLEM</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">SOLVE</button>
+    </div>
+</body>
+
+</html>
